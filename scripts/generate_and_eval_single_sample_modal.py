@@ -33,7 +33,6 @@ class EvalConfig(Config):
         # name of dataset name on Hugging Face
         self.dataset_name = "ScalingIntelligence/KernelBench"
 
-
         # Problem Specification
         self.level = REQUIRED
         # NOTE: this is the logical index (problem id the problem_name)\
@@ -99,6 +98,7 @@ image = (
         "pytest",
         "ninja",
         "utils",
+        "python-dotenv"
     )
 )
 

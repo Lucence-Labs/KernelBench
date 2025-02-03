@@ -34,6 +34,9 @@ import hashlib
 
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
+from dotenv import load_dotenv
+load_dotenv()
+
 # Define API key access
 TOGETHER_KEY = os.environ.get("TOGETHER_API_KEY")
 DEEPSEEK_KEY = os.environ.get("DEEPSEEK_API_KEY")
